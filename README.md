@@ -13,7 +13,7 @@ This bundle ensure that attribute options are created automatically when importi
       "url": "git@gitlab.niji.fr:niji-tools/socles/socle-akeneo-gke/AutoAttributeOptionsSetterBundle.git",
       "branch": "master"
     }
-  ],
+  ]
 ````
 2) Execute the following command to add the dependency to your `composer.json`
 
@@ -21,4 +21,4 @@ This bundle ensure that attribute options are created automatically when importi
 
 ## Credits
 
-This bundle is brought to you by Niji.
+This bundle is brought to you by Niji - http://www.niji.fr.
