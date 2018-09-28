@@ -2,7 +2,7 @@
 {
   "name": "niji/auto-attribute-options-setter-bundle",
   "type": "symfony-bundle",
-  "description": "Symfony Niji\AutoAttributeOptionsSetterBundle",
+  "description": "Symfony AutoAttributeOptionsSetterBundle",
   "keywords": [
     "Akeneo Attribute Options Creator"
   ],
