@@ -15,7 +15,7 @@ public function registerProjectBundles() {
   return [
       // your app bundles should be registered here,
       .../...
-      new Niji\AkeneoLabelizedExportBundle\AkeneoLabelizedExportBundle(),
+      new Niji\AutoAttributeOptionsSetterBundle\AutoAttributeOptionsSetterBundle(),
       .../...
   ];
 }
