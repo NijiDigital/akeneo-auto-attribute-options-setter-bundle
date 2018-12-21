@@ -4,20 +4,22 @@ This bundle ensure that attribute options are created automatically when importi
 
 ## Installation
 
-1) Add the repository to your `composer.json` file
-
-````yaml
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@gitlab.niji.fr:niji-tools/socles/socle-akeneo-gke/AutoAttributeOptionsSetterBundle.git",
-      "branch": "master"
-    }
-  ]
-````
-2) Execute the following command to add the dependency to your `composer.json`
+- Execute the following command to add the dependency to your `composer.json`
 
 `composer require niji/auto-attribute-options-setter-bundle`
+
+- In your app/AppKernel.php add a line to enable the bundle:
+   
+```php
+public function registerProjectBundles() {
+  return [
+      // your app bundles should be registered here,
+      .../...
+      new Niji\AkeneoLabelizedExportBundle\AkeneoLabelizedExportBundle(),
+      .../...
+  ];
+}
+```
 
 ## Credits
 
