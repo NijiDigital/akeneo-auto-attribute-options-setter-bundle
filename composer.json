@@ -6,7 +6,7 @@
   "keywords": [
     "Akeneo Attribute Options Creator"
   ],
-  "license": "Proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Aymeric Simon",
