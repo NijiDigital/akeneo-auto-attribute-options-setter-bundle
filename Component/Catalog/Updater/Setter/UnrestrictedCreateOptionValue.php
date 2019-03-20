@@ -2,10 +2,10 @@
 
 namespace Niji\AutoAttributeOptionsSetterBundle\Component\Catalog\Updater\Setter;
 
-use Akeneo\Bundle\StorageUtilsBundle\Doctrine\Common\Saver\BaseSaver;
-use Akeneo\Component\StorageUtils\Factory\SimpleFactoryInterface;
-use Pim\Component\Catalog\Updater\AttributeOptionUpdater;
-use Akeneo\Bundle\StorageUtilsBundle\Doctrine\Common\Detacher\ObjectDetacher;
+use Akeneo\Tool\Bundle\StorageUtilsBundle\Doctrine\Common\Saver\BaseSaver;
+use Akeneo\Tool\Component\StorageUtils\Factory\SimpleFactoryInterface;
+use Akeneo\Pim\Structure\Component\Updater\AttributeOptionUpdater;
+use Akeneo\Tool\Bundle\StorageUtilsBundle\Doctrine\Common\Detacher\ObjectDetacher;
 
 class UnrestrictedCreateOptionValue
 {
