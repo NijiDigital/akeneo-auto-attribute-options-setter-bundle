@@ -71,7 +71,7 @@ class UnrestrictedMultiSelectAttributeSetter extends BaseMultiSelectAttributeSet
 
         foreach ($datas as $data){
             $identifier = $attribute->getCode() . '.' . $data;
-            $optionExists = $this->attrOptionRepository->optionExists($identifier);
+            $optionExists = $this->attrOptionRepository->countByOptionExists($identifier);
 
             if(!$optionExists){
                 $this->unrestrictedCreateOptionValue->createOptionValue($attribute->getCode(), $data);

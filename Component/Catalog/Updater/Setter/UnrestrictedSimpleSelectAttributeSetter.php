@@ -58,7 +58,7 @@ class UnrestrictedSimpleSelectAttributeSetter extends BaseSimpleSelectAttributeS
             $data = preg_replace('/[^a-zA-Z0-9\']/', '_', $data);
 
             $identifier = $attribute->getCode() . '.' . $data;
-            $option = $this->attrOptionRepository->optionExists($identifier);
+            $option = $this->attrOptionRepository->countByOptionExists($identifier);
 
             if(!$option){
                 $this->unrestrictedCreateOptionValue->createOptionValue($attribute->getCode(), $data);
