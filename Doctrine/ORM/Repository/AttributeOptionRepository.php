@@ -20,7 +20,7 @@ class AttributeOptionRepository extends BaseAttributeOptionRepository
      * @throws \Doctrine\ORM\NonUniqueResultException
      *    In case of non unique result found.
      */
-    public function countByOptionExists($code) {
+    public function optionExists($code) {
         if (null === $code) {
             return FALSE;
         }
