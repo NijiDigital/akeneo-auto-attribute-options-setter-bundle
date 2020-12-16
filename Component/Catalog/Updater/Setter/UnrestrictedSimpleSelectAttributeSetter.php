@@ -2,12 +2,12 @@
 
 namespace Niji\AutoAttributeOptionsSetterBundle\Component\Catalog\Updater\Setter;
 
-use Akeneo\Component\StorageUtils\Detacher\ObjectDetacherInterface;
-use Pim\Component\Catalog\Builder\EntityWithValuesBuilderInterface;
-use Pim\Component\Catalog\Model\AttributeInterface;
-use Pim\Component\Catalog\Model\EntityWithValuesInterface;
-use Pim\Component\Catalog\Repository\AttributeOptionRepositoryInterface;
-use Pim\Component\Catalog\Updater\Setter\AttributeSetter as BaseSimpleSelectAttributeSetter;
+use Akeneo\Tool\Component\StorageUtils\Detacher\ObjectDetacherInterface;
+use Akeneo\Pim\Enrichment\Component\Product\Builder\EntityWithValuesBuilderInterface;
+use Akeneo\Pim\Structure\Component\Model\AttributeInterface;
+use Akeneo\Pim\Enrichment\Component\Product\Model\EntityWithValuesInterface;
+use Akeneo\Pim\Structure\Component\Repository\AttributeOptionRepositoryInterface;
+use Akeneo\Pim\Enrichment\Component\Product\Updater\Setter\AttributeSetter as BaseSimpleSelectAttributeSetter;
 
 class UnrestrictedSimpleSelectAttributeSetter extends BaseSimpleSelectAttributeSetter
 {

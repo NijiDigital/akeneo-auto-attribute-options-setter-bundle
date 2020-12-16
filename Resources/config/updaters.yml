@@ -5,7 +5,7 @@ parameters:
 
 services:
 
-    pim_catalog.updater.setter.multiselect_value:
+    unrestricted_catalog.updater.setter.multiselect_value:
         class: '%unrestricted_select_attribute_catalog.updater.setter.multiselect_value.class%'
         parent: pim_catalog.updater.setter.abstract
         arguments:
@@ -15,7 +15,7 @@ services:
         tags:
             - { name: 'pim_catalog.updater.setter' }
 
-    pim_catalog.updater.setter.simpleselect_value:
+    unrestricted_catalog.updater.setter.simpleselect_value:
         class: '%unrestricted_select_attribute_catalog.updater.setter.simpleselect_value.class%'
         parent: pim_catalog.updater.setter.abstract
         arguments:

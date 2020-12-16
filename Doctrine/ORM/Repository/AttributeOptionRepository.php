@@ -2,9 +2,10 @@
 
 namespace Niji\AutoAttributeOptionsSetterBundle\Doctrine\ORM\Repository;
 
-use Pim\Bundle\CatalogBundle\Doctrine\ORM\Repository\AttributeOptionRepository as BaseAttributeOptionRepository;
+use Akeneo\Pim\Structure\Bundle\Doctrine\ORM\Repository\AttributeOptionRepository as BaseAttributeOptionRepository;
+use Akeneo\Pim\Structure\Component\Repository\AttributeOptionRepositoryInterface;
 
-class AttributeOptionRepository extends BaseAttributeOptionRepository
+class AttributeOptionRepository extends BaseAttributeOptionRepository implements AttributeOptionRepositoryInterface
 {
     /**
      * Check if option exists.

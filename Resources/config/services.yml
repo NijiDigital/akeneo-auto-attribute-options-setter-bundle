@@ -1,13 +1,13 @@
 parameters:
-  pim_catalog.repository.attribute_option.class:      Niji\AutoAttributeOptionsSetterBundle\Doctrine\ORM\Repository\AttributeOptionRepository
+  unrestricted.repository.attribute_option.class:      Niji\AutoAttributeOptionsSetterBundle\Doctrine\ORM\Repository\AttributeOptionRepository
 
 services:
-  pim_catalog.repository.attribute_option:
-    class: '%pim_catalog.repository.attribute_option.class%'
+  unrestricted.repository.attribute_option:
+    class: '%unrestricted.repository.attribute_option.class%'
     factory: 'doctrine.orm.entity_manager:getRepository'
     arguments: ['%pim_catalog.entity.attribute_option.class%']
     tags:
-    - { name: 'pim_repository' }
+      - { name: 'pim_repository' }
 
   unrestricted_select_attribute_catalog.listener.class_metadata:
     class: Niji\AutoAttributeOptionsSetterBundle\EventListener\ClassMetadataListener
